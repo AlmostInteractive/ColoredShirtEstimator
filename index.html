@@ -1,0 +1,59 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.5.1/math.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+  <script src="js/mathFns.js"></script>
+  <script>
+    window.onload = () => addShirtEntry();
+  </script>
+</head>
+
+<body>
+
+<div id="estimation">
+  <div id="shirts"></div>
+  = <input type="number" id="hours" placeholder=""> hours
+
+  <div class="controls">
+    <button id="addShirtEntry">Add Ticket</button>
+    <button id="addSprintSummary">Add Sprint Summary</button>
+  </div>
+</div>
+
+<hr>
+
+<div id="sprintSummaries">
+  <div id="summaries"></div>
+
+  <div class="controls">
+    <button id="computeVariables">Compute Variables</button>
+  </div>
+</div>
+
+<div id="variables"></div>
+
+<script src="js/htmlFns.js"></script>
+</body>
+
+</html>
